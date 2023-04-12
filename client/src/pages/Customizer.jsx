@@ -8,6 +8,13 @@ import { download } from '../assets';
 import { downloadCanvasToImage, reader } from '../config/helpers';
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants';
 import { fadeAnimation, slideAnimation } from '../config/motion';
+import { 
+  CustomButton,
+  AIPicker,
+  ColorPicker,
+  FilePicker,
+  Tab,
+} from '../components';
 
 const Customizer = () => {
   return (
