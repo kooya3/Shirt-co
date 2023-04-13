@@ -33,16 +33,24 @@ const Customizer = () => {
 
 // show tab content depending on the activeTab
 const generateTabContent = () => {
-switch (activeEditorTab) {
-  case "colorPicker":
-    return <ColorPicker />
-  case "aipicker":
-    return <AIPicker />
-    case "filePicker":
-      return <FilePicker />
-      default:
-        return null;
-
+  switch (activeEditorTab) {
+    case "colorpicker":
+      return <ColorPicker />
+    case "filepicker":
+      return <FilePicker
+        file={file}
+        setFile={setFile}
+        readFile={readFile}
+      />
+    case "aipicker":
+      return <AIPicker 
+        prompt={prompt}
+        setPrompt={setPrompt}
+        generatingImg={generatingImg}
+        handleSubmit={handleSubmit}
+      />
+    default:
+      return null;
   }
 }
 
