@@ -63,6 +63,8 @@ switch (activeEditorTab) {
               handleClick={() => {}}
               />
             ))}
+
+            {generateTabContent()}
             </div>
           </div>
         </motion.div>
