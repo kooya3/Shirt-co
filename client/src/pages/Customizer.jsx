@@ -54,6 +54,19 @@ const generateTabContent = () => {
   }
 }
 
+const handleSubmit = async (type) => {
+  if (!prompt) return alert("please enter a prompt");
+
+  try{
+    // call our backend to generate ai image/text
+  } catch (error) {
+    alert(error)
+  } finally {
+    setGeneratingImg(false);
+    setActiveEditorTab("");
+  }
+}
+
 const handleDecals = (type, result) => {
   const decalType = DecalTypes[type];
 
