@@ -84,7 +84,7 @@ const readFile = (type) => {
       handleDecals(type, result);
       setActiveEditorTab("");
     })
-}
+}}
 
   return (
     <AnimatePresence>
