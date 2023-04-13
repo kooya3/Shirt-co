@@ -36,7 +36,14 @@ const generateTabContent = () => {
 switch (activeEditorTab) {
   case "colorPicker":
     return <ColorPicker />
-}
+  case "aipicker":
+    return <AIPicker />
+    case "filePicker":
+      return <FilePicker />
+      default:
+        return null;
+
+  }
 }
 
   return (
